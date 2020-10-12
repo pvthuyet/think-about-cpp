@@ -2,22 +2,36 @@
 #include<vector>
 #include<memory>
 
+class my_class_t
+{};
+
 void draw(const int& x, std::ostream& out, size_t position)
 {
 	out << std::string(position, ' ') << x << std::endl;
 }
 
+void draw(const std::string& x, std::ostream& out, size_t position)
+{
+	out << std::string(position, ' ') << x << std::endl;
+}
+
+void draw(const my_class_t& x, std::ostream& out, size_t position)
+{
+	out << std::string(position, ' ') << "my_class_t" << std::endl;
+}
+
 class object_t
 {
 public:
-	object_t(const int& x) : self_(new int_model_t(x)) 
+	template<typename T>
+	object_t(T x) : self_(new model<T>(std::move(x)))
 	{
-		std::cout << "ctor: " << x << std::endl;
+		std::cout << "ctor\n";
 	}
 	
-	object_t(const object_t& x) : self_(new int_model_t(*x.self_)) 
+	object_t(const object_t& x) : self_(x.self_->copy_())
 	{
-		std::cout << "copy: " << x.self_->data_ << std::endl;
+		std::cout << "copy\n";
 	}
 	
 	object_t(object_t&&) noexcept = default;
@@ -37,19 +51,70 @@ public:
 	}
 
 private:
-	struct int_model_t
+	struct concept_t
 	{
-		int_model_t(const int& x) : data_(x) 
+		virtual ~concept_t() = default;
+		virtual void draw_(std::ostream&, size_t) const = 0;
+		virtual concept_t* copy_() const = 0;
+	};
+
+	template<typename T>
+	struct model : concept_t
+	{
+		model(T x) : data_(std::move(x))
+		{}
+		virtual concept_t* copy_() const override
 		{
+			return new model(*this);
 		}
 
-		void draw_(std::ostream& out, size_t position)
+		virtual void draw_(std::ostream& out, size_t position) const override
 		{
 			draw(data_, out, position);
 		}
-		int data_;
+
+		T data_;
 	};
-	std::unique_ptr<int_model_t> self_;
+
+	//struct int_model_t : concept_t
+	//{
+	//	int_model_t(int x) : data_(std::move(x))
+	//	{
+	//	}
+
+	//	void draw_(std::ostream& out, size_t position) const override
+	//	{
+	//		draw(data_, out, position);
+	//	}
+
+	//	virtual concept_t* copy_() const
+	//	{
+	//		return new int_model_t(*this);
+	//	}
+
+	//	int data_;
+	//};
+
+	//struct string_model_t : concept_t
+	//{
+	//	string_model_t(std::string x) : data_(std::move(x))
+	//	{
+	//	}
+
+	//	void draw_(std::ostream& out, size_t position) const override
+	//	{
+	//		draw(data_, out, position);
+	//	}
+
+	//	virtual concept_t* copy_() const
+	//	{
+	//		return new string_model_t(*this);
+	//	}
+
+	//	std::string data_;
+	//};
+
+	std::unique_ptr<concept_t> self_;
 };
 
 using document_t = std::vector<object_t>;

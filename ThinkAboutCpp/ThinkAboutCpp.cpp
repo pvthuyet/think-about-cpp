@@ -19,11 +19,11 @@ int main()
     document_t doc;
     //doc.reserve(5);
     doc.emplace_back(0);
-    doc.emplace_back(1);
-    doc.emplace_back(2);
-    doc.emplace_back(3);
+    doc.emplace_back(std::string("hello"));
+    doc.emplace_back(doc);
+    doc.emplace_back(my_class_t{});
     //std::reverse(doc.begin(), doc.end());
-    //draw(doc, std::cout, 0);
+    draw(doc, std::cout, 0);
 
 
 
