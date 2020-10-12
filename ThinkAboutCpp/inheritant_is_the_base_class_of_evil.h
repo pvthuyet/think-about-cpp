@@ -12,13 +12,15 @@ class object_t
 public:
 	object_t(const int& x) : self_(new int_model_t(x)) 
 	{
-		std::cout << "ctor\n";
+		std::cout << "ctor: " << x << std::endl;
 	}
-
+	
 	object_t(const object_t& x) : self_(new int_model_t(*x.self_)) 
 	{
-		std::cout << "copy\n";
+		std::cout << "copy: " << x.self_->data_ << std::endl;
 	}
+	
+	object_t(object_t&&) noexcept = default;
 
 	object_t& operator=(const object_t& x)
 	{
@@ -26,6 +28,8 @@ public:
 		self_ = std::move(tmp.self_);
 		return *this;
 	}
+
+	object_t& operator=(object_t&&) noexcept = default;
 
 	friend void draw(const object_t& x, std::ostream& out, size_t position)
 	{
@@ -35,14 +39,17 @@ public:
 private:
 	struct int_model_t
 	{
-		int_model_t(const int& x) : data_(x) {}
+		int_model_t(const int& x) : data_(x) 
+		{
+		}
+
 		void draw_(std::ostream& out, size_t position)
 		{
 			draw(data_, out, position);
 		}
 		int data_;
 	};
-	std::unique_ptr< int_model_t> self_;
+	std::unique_ptr<int_model_t> self_;
 };
 
 using document_t = std::vector<object_t>;
