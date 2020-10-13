@@ -1,7 +1,7 @@
 #pragma once
 #include<vector>
 #include<memory>
-
+#include <cassert>
 class my_class_t
 {};
 
@@ -24,26 +24,26 @@ class object_t
 {
 public:
 	template<typename T>
-	object_t(T x) : self_(new model<T>(std::move(x)))
+	object_t(T x) : self_(std::make_shared<model<T>>(std::move(x)))
 	{
 		std::cout << "ctor\n";
 	}
 	
-	object_t(const object_t& x) : self_(x.self_->copy_())
-	{
-		std::cout << "copy\n";
-	}
+	//object_t(const object_t& x) : self_(x.self_->copy_())
+	//{
+	//	std::cout << "copy\n";
+	//}
 	
-	object_t(object_t&&) noexcept = default;
+	//object_t(object_t&&) noexcept = default;
 
-	object_t& operator=(const object_t& x)
-	{
-		object_t tmp(x);
-		self_ = std::move(tmp.self_);
-		return *this;
-	}
+	//object_t& operator=(const object_t& x)
+	//{
+	//	object_t tmp(x);
+	//	self_ = std::move(tmp.self_);
+	//	return *this;
+	//}
 
-	object_t& operator=(object_t&&) noexcept = default;
+	//object_t& operator=(object_t&&) noexcept = default;
 
 	friend void draw(const object_t& x, std::ostream& out, size_t position)
 	{
@@ -55,7 +55,7 @@ private:
 	{
 		virtual ~concept_t() = default;
 		virtual void draw_(std::ostream&, size_t) const = 0;
-		virtual concept_t* copy_() const = 0;
+		//virtual concept_t* copy_() const = 0;
 	};
 
 	template<typename T>
@@ -63,10 +63,10 @@ private:
 	{
 		model(T x) : data_(std::move(x))
 		{}
-		virtual concept_t* copy_() const override
-		{
-			return new model(*this);
-		}
+		//virtual concept_t* copy_() const override
+		//{
+		//	return new model(*this);
+		//}
 
 		virtual void draw_(std::ostream& out, size_t position) const override
 		{
@@ -76,7 +76,8 @@ private:
 		T data_;
 	};
 
-	std::unique_ptr<concept_t> self_;
+	//std::unique_ptr<concept_t> self_;
+	std::shared_ptr<const concept_t> self_;
 };
 
 using document_t = std::vector<object_t>;
@@ -88,4 +89,21 @@ void draw(const document_t& x, std::ostream& out, size_t position)
 		draw(e, out, position + 2);
 	}
 	out << std::string(position, ' ') << "</document>" << std::endl;
+}
+
+using history_t = std::vector<document_t>;
+void commit(history_t& x)
+{
+	assert(x.size());
+	x.push_back(x.back());
+}
+void undo(history_t& x)
+{
+	assert(x.size());
+	x.pop_back();
+}
+document_t& current(history_t& x)
+{
+	assert(x.size());
+	return x.back();
 }

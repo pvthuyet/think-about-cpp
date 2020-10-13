@@ -13,206 +13,32 @@ object_t func()
 
 int main()
 {
-    document_t doc;
-    doc.emplace_back(0);
-    doc.emplace_back(std::string("hello"));
-    doc.emplace_back(doc);
-    doc.emplace_back(my_class_t{});
+    //document_t doc;
+    //doc.emplace_back(0);
+    //doc.emplace_back(std::string("hello"));
+    //doc.emplace_back(doc);
+    //doc.emplace_back(my_class_t{});
 
     //std::reverse(doc.begin(), doc.end());
-    draw(doc, std::cout, 0);
+    //draw(doc, std::cout, 0);
 
+    history_t h(1);
+    current(h).emplace_back(0);
+    current(h).emplace_back(std::string("hello"));
+    draw(current(h), std::cout, 0);
+    std::cout << "-----------------------------------------\n";
 
+    commit(h);
 
+    current(h).emplace_back(current(h));
+    current(h).emplace_back(my_class_t());
+    current(h)[1] = std::string("world");
 
+    draw(current(h), std::cout, 0);
+    std::cout << "-----------------------------------------\n";
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    undo(h);
+    draw(current(h), std::cout, 0);
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
