@@ -13,15 +13,12 @@ object_t func()
 
 int main()
 {
-    //object_t x = 0;
-    //x = func();
-
     document_t doc;
-    //doc.reserve(5);
     doc.emplace_back(0);
     doc.emplace_back(std::string("hello"));
     doc.emplace_back(doc);
     doc.emplace_back(my_class_t{});
+
     //std::reverse(doc.begin(), doc.end());
     draw(doc, std::cout, 0);
 

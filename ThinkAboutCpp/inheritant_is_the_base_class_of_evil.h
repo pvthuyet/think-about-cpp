@@ -76,44 +76,6 @@ private:
 		T data_;
 	};
 
-	//struct int_model_t : concept_t
-	//{
-	//	int_model_t(int x) : data_(std::move(x))
-	//	{
-	//	}
-
-	//	void draw_(std::ostream& out, size_t position) const override
-	//	{
-	//		draw(data_, out, position);
-	//	}
-
-	//	virtual concept_t* copy_() const
-	//	{
-	//		return new int_model_t(*this);
-	//	}
-
-	//	int data_;
-	//};
-
-	//struct string_model_t : concept_t
-	//{
-	//	string_model_t(std::string x) : data_(std::move(x))
-	//	{
-	//	}
-
-	//	void draw_(std::ostream& out, size_t position) const override
-	//	{
-	//		draw(data_, out, position);
-	//	}
-
-	//	virtual concept_t* copy_() const
-	//	{
-	//		return new string_model_t(*this);
-	//	}
-
-	//	std::string data_;
-	//};
-
 	std::unique_ptr<concept_t> self_;
 };
 
