@@ -1,4 +1,4 @@
-## 1. Problem with inheritance
+## 2. Problem with inheritance
 ### a - Sy Brand talk  
 [Dynamic Polymorphism with Metaclasses and Code Injection](https://www.youtube.com/watch?v=8c6BAQcYF_E)
 * Often require dynamic allocation
@@ -18,3 +18,6 @@
 * [code](https://github.com/pvthuyet/think-about-cpp/blob/main/ThinkAboutCpp/inheritant_is_the_base_class_of_evil.h)
 ### d - Boost
 * [Boost.TypeErasure](https://www.boost.org/doc/libs/1_55_0/doc/html/boost_typeerasure.html#boost_typeerasure.introduction)
+  
+## 1. Retiring the Singleton Pattern
+[Peter Muldoon talk](https://www.youtube.com/watch?v=K5c7uvWe_hw&t=2487s), [slide](https://github.com/CppCon/CppCon2020/tree/main/Presentations/retiring_the_singleton_pattern)
