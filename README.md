@@ -1,3 +1,5 @@
+## 3. Virtual inheritant
+[Shoud avoid virtual inheritant if possible](https://youtu.be/SShSV_iV1Ko?t=3294)
 ## 2. Problem with inheritance
 ### a - Sy Brand talk  
 [Dynamic Polymorphism with Metaclasses and Code Injection](https://www.youtube.com/watch?v=8c6BAQcYF_E)
