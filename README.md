@@ -1,4 +1,4 @@
-## 3. Virtual inheritant
+## 3. Avoid virtual inheritance
 "Avoid virtual base classes unless your design really insists on them" - [Stephen Dewhurst](https://youtu.be/SShSV_iV1Ko?t=3294)
 ## 2. Problem with inheritance
 ### a - Sy Brand talk  
