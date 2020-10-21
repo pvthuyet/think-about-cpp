@@ -1,3 +1,10 @@
+## 4. Exception safe
+### a - [Klaus Iglberger](https://youtu.be/0ojB8c0xUd8)
+Function that should never fail
+* Destructors (implicitly marked as  `noexcept` since C++11)
+* Move Operator (should marked as  `noexcept`)
+* `swap` operations
+
 ## 3. Avoid virtual inheritance
 "Avoid virtual base classes unless your design really insists on them" - [Stephen Dewhurst](https://youtu.be/SShSV_iV1Ko?t=3294)
 ## 2. Problem with inheritance
