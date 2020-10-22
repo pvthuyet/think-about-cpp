@@ -1,5 +1,19 @@
 ## 4. Exception safe
 ### a - [Jon Kalb](https://youtu.be/W7fIy_54y-w)
+* Example implement for vector: what the problem??    
+![](doc/1-vector_impl_alex.png)  
+  
+* Example implement for stack: what the problem??    
+![](doc/2-stack_pop.png)
+* The right way of thinking  
+![](doc/3-right_way.png)
+* Exception-Safety Guarantees (Abrahams)  
+![](doc/4-guarantees_abrahams.png)
+![](doc/5-base_guarantee.png)
+![](doc/6-safety_guarantees_abrahams.png)
+![](doc/6-safety_guarantees_abrahams_2.png)
+* Error dectection  
+![](doc/8-error_detection.png)
 
 ### b - [Klaus Iglberger](https://youtu.be/0ojB8c0xUd8)
 Function that should never fail
