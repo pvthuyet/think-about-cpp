@@ -1,5 +1,7 @@
 ## 4. Exception safe
-### a - [Klaus Iglberger](https://youtu.be/0ojB8c0xUd8)
+### a - [Jon Kalb](https://youtu.be/W7fIy_54y-w)
+
+### b - [Klaus Iglberger](https://youtu.be/0ojB8c0xUd8)
 Function that should never fail
 * Destructors (implicitly marked as  `noexcept` since C++11)
 * Move Operator (should marked as  `noexcept`)
