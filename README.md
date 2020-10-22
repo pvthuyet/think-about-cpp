@@ -5,7 +5,6 @@
 [Part III](https://youtu.be/MiKxfdkMJW8)  
 * Example implement for vector: what the problem??    
 ![](doc/1-vector_impl_alex.png)  
-  
 * Example implement for stack: what the problem??    
 ![](doc/2-stack_pop.png)
 * The right way of thinking  
@@ -17,6 +16,14 @@
 ![](doc/6-safety_guarantees_abrahams_2.png)
 * Error dectection  
 ![](doc/8-error_detection.png)
+* noexcept  
+![](doc/9-noexcept.png)  
+* Ho to not `terminate`  
+![](doc/10-not_terminate.png)  
+* Destructor  
+![](doc/11-destructor.png)  
+* Aborted Construction  
+![](doc/11-aborted_construction.png)  
 
 ### b - [Klaus Iglberger](https://youtu.be/0ojB8c0xUd8)
 Function that should never fail
