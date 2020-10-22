@@ -1,5 +1,8 @@
 ## 4. Exception safe
-### a - [Jon Kalb](https://youtu.be/W7fIy_54y-w)
+### a - Jon Kalb
+[Part I](https://youtu.be/W7fIy_54y-w)  
+[Part II](https://youtu.be/b9xMIKb1jMk)  
+[Part III](https://youtu.be/MiKxfdkMJW8)  
 * Example implement for vector: what the problem??    
 ![](doc/1-vector_impl_alex.png)  
   
