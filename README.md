@@ -3,6 +3,9 @@
 [Part I](https://youtu.be/W7fIy_54y-w)  
 [Part II](https://youtu.be/b9xMIKb1jMk)  
 [Part III](https://youtu.be/MiKxfdkMJW8)  
+![](doc/12-joel.png)  
+![](doc/12-jon.png)  
+![](doc/23-promise.png)  
 * Example implement for vector: what the problem??    
 ![](doc/1-vector_impl_alex.png)  
 * Example implement for stack: what the problem??    
@@ -24,6 +27,23 @@
 ![](doc/11-destructor.png)  
 * Aborted Construction  
 ![](doc/11-aborted_construction.png)  
+* Fundamental object functions  
+![](doc/13-fundamental_object_functions.png)  
+* Guidline to use noexcept  
+![](doc/15-guideline_noexcept.png)  
+* Use critical line  
+![](doc/16-critical_line.png)  
+![](doc/17-critical_line_2.png)  
+* Most important design guidline  
+![](doc/18-design_guideline.png)  
+* Exeption safety guidline  
+![](doc/19-exception_safety_guideline.png)  
+* Sean Parent's Rules  
+![](doc/20-sean_rule.png)  
+* Refactoring steps  
+![](doc/21-refactoring_step.png)  
+* Success path  
+![](doc/22-success_path.png)  
 
 ### b - [Klaus Iglberger](https://youtu.be/0ojB8c0xUd8)
 Function that should never fail
