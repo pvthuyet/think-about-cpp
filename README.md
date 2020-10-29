@@ -1,3 +1,6 @@
+## 5. Move
+### [a - David Olsen](https://youtu.be/ZG59Bqo7qX4)  
+![](doc/24-move.png)  
 ## 4. Exception safe
 ### a - Jon Kalb
 [Part I](https://youtu.be/W7fIy_54y-w)  
