@@ -5,7 +5,7 @@
 ![](doc/27-lsp.png)  
 ![](doc/28-isp.png)  
 ![](doc/29-dip.png)  
-![](doc/30-solid_summery.png)  
+![](doc/30-solid_summary.png)  
 ## 5. Move
 ### [a - David Olsen](https://youtu.be/ZG59Bqo7qX4)  
 ![](doc/24-move.png)  
