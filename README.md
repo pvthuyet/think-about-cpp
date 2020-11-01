@@ -1,3 +1,11 @@
+## 6. SOLID
+### [a - Klaus Iglberger](https://youtu.be/Ntraj80qN2k)  
+![](doc/25-srp.png)  
+![](doc/26-ocp.png)  
+![](doc/27-lsp.png)  
+![](doc/28-isp.png)  
+![](doc/29-dip.png)  
+![](doc/30-solid_summery.png)  
 ## 5. Move
 ### [a - David Olsen](https://youtu.be/ZG59Bqo7qX4)  
 ![](doc/24-move.png)  
