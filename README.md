@@ -1,3 +1,10 @@
+## [7. Short life span](https://www.youtube.com/watch?v=J02S50z5zEo&t=769s)
+![](doc/31-weak-ordering.png)  
+![](doc/32-less-ordering.png)  
+![](doc/33-equal.png)  
+![](doc/34-equivalence.png)  
+![](doc/35-3way.png)  
+![](doc/36-auto-check.png)  
 ## 6. SOLID
 ### [a - Klaus Iglberger](https://youtu.be/Ntraj80qN2k)  
 ![](doc/25-srp.png)  
