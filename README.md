@@ -1,11 +1,11 @@
-## [7. Short life span](https://www.youtube.com/watch?v=J02S50z5zEo&t=769s)
+# [7. Short life span](https://www.youtube.com/watch?v=J02S50z5zEo&t=769s)
 ![](doc/31-weak-ordering.png)  
 ![](doc/32-less-ordering.png)  
 ![](doc/33-equal.png)  
 ![](doc/34-equivalence.png)  
 ![](doc/35-3way.png)  
 ![](doc/36-auto-check.png)  
-## 6. SOLID
+# 6. SOLID
 ### [a - Klaus Iglberger](https://youtu.be/Ntraj80qN2k)  
 ![](doc/25-srp.png)  
 ![](doc/26-ocp.png)  
@@ -13,10 +13,10 @@
 ![](doc/28-isp.png)  
 ![](doc/29-dip.png)  
 ![](doc/30-solid_summary.png)  
-## 5. Move
+# 5. Move
 ### [a - David Olsen](https://youtu.be/ZG59Bqo7qX4)  
 ![](doc/24-move.png)  
-## 4. Exception safe
+# 4. Exception safe
 ### a - Jon Kalb
 [Part I](https://youtu.be/W7fIy_54y-w)  
 [Part II](https://youtu.be/b9xMIKb1jMk)  
@@ -69,9 +69,9 @@ Function that should never fail
 * Move Operator (should marked as  `noexcept`)
 * `swap` operations
 
-## 3. Avoid virtual inheritance
+# 3. Avoid virtual inheritance
 "Avoid virtual base classes unless your design really insists on them" - [Stephen Dewhurst](https://youtu.be/SShSV_iV1Ko?t=3294)
-## 2. Problem with inheritance
+# 2. Problem with inheritance
 ### a - Sy Brand talk  
 [Dynamic Polymorphism with Metaclasses and Code Injection](https://www.youtube.com/watch?v=8c6BAQcYF_E)
 * Often require dynamic allocation
@@ -92,5 +92,5 @@ Function that should never fail
 ### d - Boost
 * [Boost.TypeErasure](https://www.boost.org/doc/libs/1_55_0/doc/html/boost_typeerasure.html#boost_typeerasure.introduction)
   
-## 1. Retiring the Singleton Pattern
+# 1. Retiring the Singleton Pattern
 [Peter Muldoon talk](https://www.youtube.com/watch?v=K5c7uvWe_hw&t=2487s), [slide](https://github.com/CppCon/CppCon2020/tree/main/Presentations/retiring_the_singleton_pattern)
