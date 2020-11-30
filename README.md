@@ -1,3 +1,5 @@
+# [8. Sean Parent talk coding cpp](https://www.youtube.com/watch?v=W2tWOdzgXHA&list=WL&index=3&t=2075s)
+![](doc/37-tip-cpp.png) 
 # [7. Short life span](https://www.youtube.com/watch?v=J02S50z5zEo&t=769s)
 ![](doc/31-weak-ordering.png)  
 ![](doc/32-less-ordering.png)  
