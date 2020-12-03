@@ -1,3 +1,9 @@
+# [9. Object-Oriented Programming - Jon Kalb - CppCon 2019](https://www.youtube.com/watch?v=32tDTD9UJCE&t=1221s)
+Summary  
+![](doc/40-oop.png) 
+detail  
+![](doc/38-oop.png) 
+![](doc/39-oop.png) 
 # [8. Sean Parent talk coding cpp](https://www.youtube.com/watch?v=W2tWOdzgXHA&list=WL&index=3&t=2075s)
 ![](doc/37-tip-cpp.png) 
 # [7. Short life span](https://www.youtube.com/watch?v=J02S50z5zEo&t=769s)
