@@ -1,3 +1,9 @@
+# [How to Choose the Right Standard Library Container, and Why You Should Want Some More - Alan Talbot](https://www.youtube.com/watch?v=yjPKVOYcw28&t=2183s)
+![](doc/41-container.png) 
+![](doc/42-container.png) 
+[Vector recycling](https://youtu.be/yjPKVOYcw28?t=2228)  
+![](doc/43-container.png) 
+![](doc/44-container.png) 
 # [9. Object-Oriented Programming - Jon Kalb - CppCon 2019](https://www.youtube.com/watch?v=32tDTD9UJCE&t=1221s)
 Summary  
 ![](doc/40-oop.png) 
