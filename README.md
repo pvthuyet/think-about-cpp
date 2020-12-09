@@ -1,4 +1,4 @@
-# [How to Choose the Right Standard Library Container, and Why You Should Want Some More - Alan Talbot](https://www.youtube.com/watch?v=yjPKVOYcw28&t=2183s)
+# [10. How to Choose the Right Standard Library Container, and Why You Should Want Some More - Alan Talbot](https://www.youtube.com/watch?v=yjPKVOYcw28&t=2183s)
 ![](doc/41-container.png) 
 ![](doc/42-container.png) 
 [Vector recycling](https://youtu.be/yjPKVOYcw28?t=2228)  
